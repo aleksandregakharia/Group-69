@@ -1,0 +1,123 @@
+<!-- 8) შექმენით HTML ფაილი და internal css ის საშუალებით გასტილეთ შემდეგი ელემენტები:  4 paragraph, 5 heading, 4 img  და 3 button. 2 paragraph - oს ტექსტის ფერი იყოს წითელი, უკანა ფონი შავი, ცენტრში გადაიტანეთ, გაადიდეთ ტექსტი და border გამოიყენეთ როგორც თქვენ მოგინდებათ დანარცენი ორი paragraph კი თქვენს გემოზე გასტილეთ მაგრამ სავალდებულოა რაც იცით ყველა property(კუთვნილება) გამოიყენეთ. 3 heading - ის ტექსტის ფერი იყოს ყვითელი, უკანა ფონი შავი და border გაუკეთეთ 1px ორმაგი ხაზით იასამნისფერი ფერით. დანარჩენი ორი heading თქვენს გემოზე გასტილეთ. 4 img - border ები შეცვალეთ 3px წერტილოვანი ხაზით შავი ფერით და button - ებში გამოიყენეთ ყველა ნასწავლი კუთვნილება. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    
+    .para1, .para2 {
+      color: red;
+      background-color: black;
+      text-align: center;
+      font-size: 20px;
+      border: 2px solid red;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    .para3 {
+      color: green;
+      background-color: #e0ffe0;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: justify;
+      border: 3px dashed green;
+      padding: 15px;
+      margin: 10px;
+      font-style: italic;
+    }
+
+    .para4 {
+      color: navy;
+      background-color: #f0f8ff;
+      font-size: 16px;
+      font-weight: normal;
+      text-align: left;
+      border: 2px dotted navy;
+      padding: 12px;
+      margin: 10px;
+      text-decoration: underline;
+    }
+
+    
+    .heading1, .heading2, .heading3 {
+      color: yellow;
+      background-color: black;
+      border: 1px double violet;
+      padding: 10px;
+    }
+
+    .heading4 {
+      color: darkblue;
+      background-color: lightgray;
+      border: 2px solid darkblue;
+      font-style: italic;
+      padding: 8px;
+    }
+
+    .heading5 {
+      color: darkred;
+      background-color: #ffe4e1;
+      border: 2px dashed darkred;
+      font-weight: bold;
+      padding: 8px;
+    }
+
+   
+    img {
+      border: 3px dotted black;
+      width: 200px;
+      height: auto;
+      margin: 10px;
+    }
+
+    
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: 2px solid darkgreen;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <h1 class="heading1">ეს არის სათაური 1</h1>
+  <h2 class="heading2">ეს არის სათაური 2</h2>
+  <h3 class="heading3">ეს არის სათაური 3</h3>
+  <h4 class="heading4">ეს არის სათაური 4</h4>
+  <h5 class="heading5">ეს არის სათაური 5</h5>
+
+  
+  <p class="para1">ეს არის პირველი პარაგრაფი. ის წითელი ფერისაა, შავი ფონით და ცენტრში განლაგებული.</p>
+  <p class="para2">ეს არის მეორე პარაგრაფი იგივე სტილებით.</p>
+  <p class="para3">ეს არის მესამე პარაგრაფი, გასტილულია მწვანე ფერებში და მარცხნივ გასწორებულია.</p>
+  <p class="para4">ეს არის მეოთხე პარაგრაფი, რომელიც გამოიყურება ლურჯ ფერებში და შეიცავს სხვა სტილებსაც.</p>
+
+  
+  <img src="ხ.jpg" alt="img1">
+  <img src="დუბ.jpg" alt="img2">
+  <img src="bl.jpg" alt="img3">
+  <img src="co.jpg" alt="img4">
+
+  
+  <button>ღილაკი 1</button>
+  <button>ღილაკი 2</button>
+  <button>ღილაკი 3</button>
+
+</body>
+</html>
